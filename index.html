@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+</head>
+<body>
+	<center>
+	<h1 id="title">Submission Form</h1>
+	<p id="description" class="description text-center">
+		Thank you for taking the time to help us improve the platform
+	</p>
+
+	<form id="survey-form">
+		<br>
+		<label for="name" class="main-label">
+			Name
+			<input id="name-label" class ="form-control basic-input" placeholder="Enter Name" required>
+		</label>
+    <br>
+		<label id="email-label" for="email" class="main-label">
+			Email
+			<input id="email-label" class="form-control basic-input" required placeholder="Enter Email" type="email">
+		</label>
+    <br>
+		<label for="number" class="main-label">
+			Number
+			<input type="number" id="number" name="age" min=0 max=100 placeholder="Input you Number" class="form-control basic-input">
+		</label>
+
+		<label for="dropdown" class="second-label">
+			Select something from here
+			<select id="dropdown">
+				<option value="">Option 1</option>
+				<option value="">Option 2</option>
+				<option value="">Option 3</option>
+			</select>
+			<br>
+		</label>
+
+		<label class="second-label">What's your favorite programming language</label>
+
+		<label for="html" class="languages">
+			<input type="radio" id="html" name="fav_language" value="HTML">
+			HTML
+		</label>
+
+		<label for="css" class="languages">
+			<input type="radio" id="css" name="fav_language" value="CSS">
+			CSS
+		</label>
+
+		<label for="javascript" class="languages" id="lastLanguages">
+			<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+			JavaScript
+		</label> 
+
+		<div class="form-group" class="second-label" id="comments">
+			<p>Any comments or suggestions?</p>
+			<textarea
+			  id="comments"
+			  cols="40"
+			  rows="12"
+			  class="input-textarea"
+			  name="comment"
+			  placeholder="Enter your comment here..."
+			></textarea>
+		</div>
+
+
+		<label class="foods" class="second-label">
+			<label>What do you want to eat?</label>
+			<label>
+				<input type="checkbox" id="checkbox1" name="checkbox" value="first">
+				Burger
+			</label>
+			<label>
+				<input type="checkbox" id="checkbox2" name="checkbox" value="second">
+				Pizza
+			</label>
+		</label>
+		<br>
+		<div>
+
+		</div>
+	</form>
+	<button type="submit" id="submit" class="submit-button">
+		Submit
+	</button>
+	<center>
+</body>
+</html>
